@@ -1,0 +1,84 @@
+.card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 1fr));
+  column-gap: 20px;
+}
+
+.card_wrapper .card {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 24px 70px 0px rgba(0, 0, 0, 0.07);
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  column-gap: 40px;
+}
+
+.card_wrapper .card h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card_wrapper .card .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c4c4c4;
+}
+
+.card_wrapper .card .small_procent {
+  border-radius: 12px;
+  background: #55b963;
+  padding: 2px 5px 2px 7px;
+  color: #ffffff;
+  margin-left: 4px;
+}
+
+.card_wrapper .card .bottom_left {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.card_wrapper .card .bottom_left .bottom_text_container {
+  display: flex;
+  align-items: center;
+}
+
+.card_wrapper .card .bottom_left .bottom_text_container svg path {
+  fill: #FFCA26;
+}
+
+.card_wrapper .card .bottom_left h4 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.card_wrapper .card .percent {
+  position: relative;
+}
+
+.card_wrapper .card .percent .percent_text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+}
+
+.card_wrapper .card .percent .percent_text h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card_wrapper .card .percent .percent_text p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}

@@ -68,9 +68,8 @@ export default function SiderMenu() {
       <AntLayout>
         <Content
           style={{
-            margin: "24px 16px",
-            padding: 24,
-            background: "#fff",
+            padding: "20px 40px",
+            background: "#f8f8f8",
             minHeight: 280,
           }}
         >
