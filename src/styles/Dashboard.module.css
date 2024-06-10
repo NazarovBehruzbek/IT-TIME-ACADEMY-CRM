@@ -17,7 +17,7 @@
 }
 
 .card_wrapper .card h5 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -30,7 +30,6 @@
 
 .card_wrapper .card .small_procent {
   border-radius: 12px;
-  background: #55b963;
   padding: 2px 5px 2px 7px;
   color: #ffffff;
   margin-left: 4px;
@@ -45,10 +44,6 @@
 .card_wrapper .card .bottom_left .bottom_text_container {
   display: flex;
   align-items: center;
-}
-
-.card_wrapper .card .bottom_left .bottom_text_container svg path {
-  fill: #FFCA26;
 }
 
 .card_wrapper .card .bottom_left h4 {
@@ -81,4 +76,92 @@
   font-size: 12px;
   font-weight: 400;
   text-align: center;
+  max-width: 85px;
+}
+
+.charts_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(330px, 1fr));
+  column-gap: 20px;
+}
+
+.charts_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "first first .";
+}
+
+.charts_wrapper .hBarChart {
+  grid-area: first;
+  height: fit-content;
+  min-height: 330px;
+}
+
+.dashboard_container {
+  display: flex;
+  justify-content: center;
+}
+
+.chart_container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart_container canvas {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.chart_legend {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 320px;
+}
+
+.chart_legend ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chart_legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.color_box {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+/* Horizontal bar chart styles */
+
+.hBchart_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 80px;
+  row-gap: 15px;
+}
+
+.hBchart_container .hBchart_item .hBchart_item_top {
+  display: flex;
+  justify-content: space-between;
 }

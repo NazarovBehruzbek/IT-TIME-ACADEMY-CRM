@@ -7,7 +7,7 @@ const { Header } = AntLayout;
 export default function Layout() {
   return (
     <div style={{ borderBottom: "1px solid #EEEEEE" }}>
-      <AntLayout style={{ padding: "0 20px" }}>
+      <AntLayout style={{ padding: "0 20px", background:"#ffffff" }}>
         <Header
           style={{
             padding: 0,
