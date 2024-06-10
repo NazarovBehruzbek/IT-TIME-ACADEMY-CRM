@@ -56,7 +56,9 @@ export default function SiderMenu() {
     (item) => location.pathname === item.label.props.to
   )?.key;
   return (
-    <AntLayout style={{ minHeight: "calc(100vh - 65px)" }}>
+    <AntLayout
+      style={{ minHeight: "calc(100vh - 65px)", height: "calc(100vh - 65px)" }}
+    >
       <Sider trigger={null} style={{ background: "#fff" }}>
         <Menu
           mode="inline"
@@ -71,6 +73,7 @@ export default function SiderMenu() {
             padding: "20px 40px",
             background: "#f8f8f8",
             minHeight: 280,
+            overflowY: "scroll",
           }}
         >
           <Outlet />
