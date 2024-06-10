@@ -125,6 +125,7 @@ export default function Dashboard() {
                   width: "100%",
                   display: "flex",
                   justifyContent: "center",
+                  zIndex: 50,
                 }}
               >
                 <PieChart2 />
@@ -201,6 +202,7 @@ export default function Dashboard() {
                   width: "100%",
                   display: "flex",
                   justifyContent: "center",
+                  zIndex: 50,
                 }}
               >
                 <PieChart />
@@ -307,6 +309,7 @@ export default function Dashboard() {
                   width: "100%",
                   display: "flex",
                   justifyContent: "center",
+                  zIndex: 50,
                 }}
               >
                 <PieChart3 />
